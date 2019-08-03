@@ -1,4 +1,4 @@
-package com.sudhir.observer.pattern;
+package com.sudhir.revise.Observe.observer.pattern;
 
 import java.util.ArrayList;
 import java.util.List;

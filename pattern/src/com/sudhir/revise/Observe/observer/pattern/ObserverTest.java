@@ -1,4 +1,4 @@
-package com.sudhir.observer.pattern;
+package com.sudhir.revise.Observe.observer.pattern;
 
 public class ObserverTest {
     public static void main(String[] args) {

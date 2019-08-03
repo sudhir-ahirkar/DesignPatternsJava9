@@ -1,5 +1,6 @@
 # What is Observer Design Pattern 
-The observer pattern is a Behavioral design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes or updates.
+The observer pattern is a Behavioral design pattern in which an object, called the subject, maintains a list of its dependents,
+ called observers, and notifies them automatically of any state changes or updates.
 
 ## Diagram
 ![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/observer-pattern/diagrams/Observer-Pattern-class-diagram.png "Diagram")

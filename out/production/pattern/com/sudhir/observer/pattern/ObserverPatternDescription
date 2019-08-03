@@ -1,9 +1,15 @@
 https://javarevisited.blogspot.com/2011/12/observer-design-pattern-java-example.html
-Observer design pattern in Java is a fundamental core Java pattern where Observe watch for any change in state or property of Subject. For Example Company updates all its shareholders for any decision they make here Company is Subject and Shareholders are Observers, any change in policy of company and Company notifies all its Shareholders or Observer. This was simple real world explanation of Observer pattern. In this article we will in detail what is Observer Design pattern, what is benefit of Observer design Pattern, Example or Observer pattern in Java and few other points. Just like Decorator design Pattern and Factory Pattern in Java, Observer pattern is also used in JDK.
+Observer design pattern in Java is a fundamental core Java pattern where Observe watch for any change in state or property of Subject.
+For Example Company updates all its shareholders for any decision they make here Company is Subject and Shareholders are Observers,
+any change in policy of company and Company notifies all its Shareholders or Observer. This was simple real world explanation of Observer pattern.
+ In this article we will in detail what is Observer Design pattern, what is benefit of Observer design Pattern, Example or Observer pattern in Java
+ and few other points. Just like Decorator design Pattern and Factory Pattern in Java, Observer pattern is also used in JDK.
 
 Observer design Pattern Java Code Example
 What is Observer design Pattern?
-Observer design pattern in Java Code ExampleObserver design pattern in Java is very important pattern and as name suggest it’s used to observe things. Suppose you want to notify for change in a particular object than you observer that object and changes are notified to you. Object which is being observed is refereed as Subject and classes which observe subject are called Observer. This is beautiful pattern and used heavily along with Model View Controller Design pattern where change in model is propagated to view so that it can render it with modified information. Observer pattern is also a very popular Java interview questions and mostly asked on Senior or mid senior level.
+Observer design pattern in Java Code ExampleObserver design pattern in Java is very important pattern and as name suggest it’s
+ used to observe things. Suppose you want to notify for change in a particular object than you observer that object and
+ changes are notified to you. Object which is being observed is refereed as Subject and classes which observe subject are called Observer. This is beautiful pattern and used heavily along with Model View Controller Design pattern where change in model is propagated to view so that it can render it with modified information. Observer pattern is also a very popular Java interview questions and mostly asked on Senior or mid senior level.
 
 
 
@@ -17,7 +23,9 @@ In real world if try to find example see when we subscribe for New Phone connect
 
 How Observer Design Pattern is implemented in Java;
 
-For implementation of this pattern java makes our task very easy, developer need not to do so much for implementing this pattern .In java.util package we can find interfaces ,classes and methods for implementing this pattern.
+For implementation of this pattern java makes our task very easy, developer need not to do so much for implementing this pattern .
+
+In java.util package we can find interfaces ,classes and methods for implementing this pattern.
 
 Public Interface Observer:
 
@@ -43,7 +51,14 @@ notifyObservers(): notify all the observers if object has changed .
 
 
 Code Example of Observer design pattern in Java:
-Observer Design pattern is generic than how it is implemented in Java. You are free to choose java.util.Observable or java.util.Observer or writing your own Subject and Observer interface. I prefer having my own Subject and Observer interface and this is how I am going to write my Code Example of Observer design Pattern in java. Mine Example is very Simple you have a Loan on which interest rate is subject to change and when it changes, Loan notifies to Newspaper or Internet media to display new loan interest rate. To implement this we have a Subject interface which contains methods for adding, removing and notifying Observers and an Observer interface which contains update(int interest) method which will be called by Subject implementation when interest rate changes.
+Observer Design pattern is generic than how it is implemented in Java. You are free to choose java.util.Observable or java.util.Observer or writing
+ your own Subject and Observer interface.
+  I prefer having my own Subject and Observer interface and
+   this is how I am going to write my Code Example of Observer design Pattern in java.
+    Mine Example is very Simple you have a Loan on which interest rate is subject to change and when it changes,
+     Loan notifies to Newspaper or Internet media to display new loan interest rate.
+     To implement this we have a Subject interface which contains methods for adding, removing and notifying Observers and
+     an Observer interface which contains update(int interest) method which will be called by Subject implementation when interest rate changes.
 
 import java.util.ArrayList;
 
@@ -147,12 +162,14 @@ public class ObserverTest {
 
 
 Advantage of Observer Design Pattern in Java:
-Main advantage is loose coupling between objects called observer and observable. The subject only know the list of observers it don’t care about how they have their implementation.All the observers are notified by subject in a single event call as Broadcast communication
+Main advantage is loose coupling between objects called observer and observable. The subject only know the list of observers it don’t care about
+ how they have their implementation.All the observers are notified by subject in a single event call as Broadcast communication
 
 
 Disadvantage of Observer Design Pattern in Java:
 
-·          The disadvantage is that the sometime if any problem comes, debugging becomes very difficult because flow of control is implicitly between observers and observable we can predict that now observer is going to fire and if there is chain between observers then debugging become more complex.
+·          The disadvantage is that the sometime if any problem comes, debugging becomes very difficult because flow of control is implicitly between
+observers and observable we can predict that now observer is going to fire and if there is chain between observers then debugging become more complex.
 ·          Another issue is Memory management because subject will hold all the reference of all the observers if we not unregister the object it can create the memory issue.
 
 That’s all on Observer Pattern in Java. Share your thought how and when you have used Observer Pattern in your Project and any issue you have faced?
