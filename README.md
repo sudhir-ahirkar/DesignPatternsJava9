@@ -9,6 +9,14 @@ Factory pattern creates object without exposing the creation logic to the client
 ### When to use Factory Design Pattern 
 Factory design pattern is used when we have a super class with multiple sub-classes and based on input one of the sub-class is expected to be returned.
 
+
+Note:
+
+In this post, I will demonstrate another creational pattern, i.e. Factory pattern, for creating instances for your classes. Factory, as the name suggests,
+is a place to create some different products which are somehow similar in features yet divided into categories.
+
+In Java, factory pattern is used to create instances of different classes of the same type.
+
 ### Learn Design Patterns with Java by Aseem Jain
 This repository contains working project code used in video Course by Packt Publication with title "Learn Design Patterns with Java " authored by "Aseem Jain".
 
